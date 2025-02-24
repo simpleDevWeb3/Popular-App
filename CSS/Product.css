@@ -1,0 +1,139 @@
+
+
+.product-detail-view{
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 100px;
+  justify-content: start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  text-align: start;
+  margin-bottom: 500px;
+}
+
+
+.product-thumbnail-container{
+
+ width: 500px;
+ height: 600px;
+}
+.product-thumbnail-container img{
+  width: 100%;
+}
+
+.view-item{
+  display: flex;
+  justify-content: center;
+}
+
+.product-name{
+  margin-bottom: 20px;
+}
+
+.product-detail{
+  padding-top:20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-style: solid;
+  border-color: #ebebeb;
+  border-width: 3px;
+  border-bottom-width: 5px;
+  border-right-width: 5px;
+  border-radius: 6px;
+  width: 450px;
+  height: 450px;
+}
+.product-detail h1{
+  width: 100%;
+}
+
+.product-detail .status >img{
+  width: 100px;
+}
+.product-detail .status >span{
+  font-weight: 700;
+}
+
+.status{
+  display: flex;
+  align-items:end;
+  column-gap: 10px;
+  margin-bottom: 15px;
+}
+.status .rate{
+  color: #3a3a3a;
+}
+.status .total-solded{
+  color:gray
+}
+.status .item-stats{
+  color: rgb(77, 174, 47);
+}
+.item-price{
+  margin-top:40px;
+  margin-bottom: 30px;
+}
+
+.quantity-input{
+  border: none;
+  color: rgb(168, 165, 165);
+  text-align: center;
+  font-size: 16px;
+  width: 50px;
+  margin-bottom: 30px;
+ 
+}
+
+
+
+div >.decrease{
+  color: gray;
+  border: none;
+  font-weight: bold;
+  text-align: center;
+  width: 30px;
+  height: 30px;;
+  border-radius: 50%;
+
+}
+
+div> .increase{
+  color: gray;
+  border: none;
+  font-weight: bold;
+  text-align: center;
+  width: 30px;
+  height: 30px;;
+  border-radius: 50%;
+}
+.add-to-cart-button{
+  margin-right: 20px;
+ padding:10px 20px;
+ font-weight:700;
+ border: none;
+ border-radius: 5px;
+ color: white;
+ background-color: black;
+}
+
+.order-now-button{
+  padding:10px 20px;
+  font-weight:700;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(89, 202, 32);
+}
+.quantity-input::-webkit-outer-spin-button,
+.quantity-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.quantity-input:focus {
+  outline: none;
+}

@@ -17,12 +17,17 @@ svg{
 }
 
 .popular-left-head{
+
   margin-left: 50px;
+  margin-right: 200px;
+}
+.popular-left-head a{
+  opacity: 1;
 }
 
 .popular-logo{
   width: 205px;
-
+ 
 }
 
 .product-grid{
@@ -31,6 +36,7 @@ svg{
 
 
 .popular-center-head {
+  flex: 1;
   padding-right: 60px;
   position: relative;
   width: 600px;
@@ -94,6 +100,7 @@ svg{
 
   .order-text{
     display:none;
+ 
   }
 
   .product-grid{
@@ -112,6 +119,7 @@ svg{
 
 
 .popular-right-head{
+  margin-left: 80px;
   display: flex;
   flex-shrink: 0;
   align-items: center;
@@ -134,7 +142,7 @@ svg{
 }
 
 .cart-quantity{
-
+ 
   position: absolute;
   left:16px;
   top: -10px;
@@ -148,6 +156,7 @@ svg{
   font-size: 25px;
   color: rgb(223, 39, 39);
   font-weight: 700;
+  cursor: pointer;
 }
 
 
@@ -186,9 +195,10 @@ nav >a:hover{
 .category{
   margin-top: 20px;
   display: flex;
-  column-gap: 30px;
+  column-gap: 90px;
   justify-content: center;
   margin-bottom: 20px;
+
 }
 
 .category .circle{
@@ -196,7 +206,7 @@ nav >a:hover{
  width: 100px;
  border-radius: 50%;
  background-color: rgb(221, 221, 221);
-
+ cursor: pointer;
 
 }
 
@@ -211,10 +221,21 @@ nav >a:hover{
   display: flex;
   flex-direction: column;
   gap:10px;
-
   justify-content: center;
   align-items: center;
 
+}
+
+.category div >h3{
+  text-align: center;
+  padding-top: 10px;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.category a{
+  opacity: 1;
 }
 
 
@@ -229,6 +250,7 @@ nav >a:hover{
   max-width: 1200px;
   width: 100%;
   text-align: start;
+  margin-bottom: 500px;
 }
 
 /*For Responsiveness */
@@ -283,6 +305,9 @@ hr{
  
 }
 
+.product-details a{
+  opacity:1;
+}
 .product-details:hover{
   background-color: rgb(237, 235, 235);
 }
