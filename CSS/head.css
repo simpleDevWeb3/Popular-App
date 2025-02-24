@@ -1,10 +1,15 @@
 header{
+  position: fixed;
+  left: 0;
+  right: 0;
   font-family: Roboto,arial;
   box-shadow: 5px 3px 4px rgba(0,0,0,0.1);
   display:flex ;
   column-gap: 20px;
   align-items: center;
   justify-content: space-between;
+  background-color: white;
+  z-index: 3;
 }
 
 svg{
@@ -19,6 +24,11 @@ svg{
   width: 205px;
 
 }
+
+.product-grid{
+ gap:20px;
+}
+
 
 .popular-center-head {
   padding-right: 60px;
@@ -54,10 +64,7 @@ svg{
      
   } 
 
-  .popular-logo{
-    width: 100px;
-    
-  }
+
 
 
   .popular-right-head{
@@ -95,6 +102,8 @@ svg{
         justify-content: center;
         align-items: center;
     }
+
+   
   }
 
 
@@ -106,21 +115,51 @@ svg{
   display: flex;
   flex-shrink: 0;
   align-items: center;
-  gap: 28px;
+  gap: 50px;
   margin-right: 20px;
 }
 
+.cart{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.cart svg{
+  color: gray;
+}
+
+.cart-container{
+  position: relative;
+}
+
+.cart-quantity{
+
+  position: absolute;
+  left:16px;
+  top: -10px;
+  font-size: 13px;
+  font-weight: bold;
+  font-size: 13px;
+  color: gray;
+}
 .order-text{
   white-space: nowrap;
-  font-size: 20px;
+  font-size: 25px;
   color: rgb(223, 39, 39);
   font-weight: 700;
 }
 
 
 nav{
+  background-color: white;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  right:0;
+  top: 60px;
   padding-left: 55px;
+  padding-top: 30px;
   margin-top: 20px;
   margin-bottom: 40px;
   display: flex;
@@ -128,8 +167,21 @@ nav{
   border-bottom:1px solid  rgba(206, 206, 206, 0.30);
   border-width: 2px;
   padding-bottom: 20px;
+  
  
 }
+
+nav >a{
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+  transition: color 0.15s;
+}
+nav >a:hover{
+     color: rgb(255, 0, 0);
+  
+}
+
 
 .category{
   margin-top: 20px;
@@ -145,6 +197,15 @@ nav{
  border-radius: 50%;
  background-color: rgb(221, 221, 221);
 
+
+}
+
+.circle img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+ 
 }
 .category >div{
   display: flex;
@@ -163,11 +224,11 @@ nav{
   margin-right: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  justify-content: center;
+  justify-content: start;
   flex-wrap: wrap;
   max-width: 1200px;
   width: 100%;
-  text-align: center;
+  text-align: start;
 }
 
 /*For Responsiveness */
@@ -177,11 +238,7 @@ nav{
      
   } 
 
-  .popular-logo{
-    width: 100px;
-    
-  }
-
+  
 
   .popular-right-head{
 
@@ -205,6 +262,47 @@ hr{
   border-color: rgba(255, 255, 255, 0.23);
   border-width: 2px;
 }
+
+
+.product-details{
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+  border: solid rgb(222, 221, 221);
+  border-radius: 6px;
+  border-width: 2px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.product-details img{
+  width: 100%;
+ 
+}
+
+.product-details:hover{
+  background-color: rgb(237, 235, 235);
+}
+.rating{
+  display: flex;
+   align-items: center;
+ 
+}
+
+.rating img{
+  margin-left: 10px;
+  width: 100px;
+}
+
+.price{
+
+  font-weight: 700;
+  color: rgb(35, 35, 35);
+}
+
 
 
 
