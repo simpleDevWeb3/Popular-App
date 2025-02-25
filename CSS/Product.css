@@ -54,12 +54,13 @@
   padding-right: 40px;
   padding-bottom: 40px;
   border-style: solid;
-  border-color: #fa7900;
+  border-color: #e6ded7;
   border-width: 3px;
   border-bottom-width: 5px;
   border-right-width: 5px;
   border-radius: 6px;
   width: 650px;
+  border: none;
  
 }
 .product-detail h1{
