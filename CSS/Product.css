@@ -1,18 +1,20 @@
 
-
-.product-detail-view{
+.view-product{
+  max-width: 1200px;
+  flex-wrap: wrap;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+.product-detail-view{
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 100px;
-  justify-content: start;
-  flex-wrap: wrap;
-  max-width: 1200px;
+  column-gap: 50px;
+  align-items: start;
   width: 100%;
   text-align: start;
-  margin-bottom: 500px;
+  margin-bottom: 20px;
 }
 
 
@@ -39,13 +41,14 @@
   padding-left: 20px;
   padding-right: 20px;
   border-style: solid;
-  border-color: #ebebeb;
+  border-color: #fa7900;
   border-width: 3px;
   border-bottom-width: 5px;
   border-right-width: 5px;
   border-radius: 6px;
   width: 450px;
   height: 450px;
+
 }
 .product-detail h1{
   width: 100%;
@@ -91,43 +94,80 @@
 
 
 div >.decrease{
-  color: gray;
+  color: rgb(210, 209, 209);
+  background-color: #3a3a3a;
   border: none;
   font-weight: bold;
   text-align: center;
   width: 30px;
   height: 30px;;
   border-radius: 50%;
+  cursor: pointer;
+   transition: opacity 0.15s;
 
 }
 
 div> .increase{
-  color: gray;
+  color: rgb(210, 209, 209);
+  background-color: #3a3a3a;
   border: none;
   font-weight: bold;
   text-align: center;
   width: 30px;
   height: 30px;;
   border-radius: 50%;
-}
-.add-to-cart-button{
-  margin-right: 20px;
- padding:10px 20px;
- font-weight:700;
- border: none;
- border-radius: 5px;
- color: white;
- background-color: black;
+  cursor: pointer;
+  transition: opacity 0.15s;
 }
 
+.increase:hover{
+  opacity: 0.8;;
+}
+
+.decrease:hover{
+  opacity: 0.8;;
+}
+
+
+.add-to-cart-button{
+  margin-right: 20px;
+ padding:10px 30px;
+
+ font-size: 18px;
+ border: solid 2px;
+ border-radius: 5px;
+ color:rgb(220, 8, 8);
+ background-color: rgba(247, 49, 31, 0.316);
+ cursor: pointer;
+ transition: background-color 0.15s, color 0.15s ;
+}
+
+.add-to-cart-button:hover{
+  background-color: rgb(165, 42, 42);
+  color: white;
+}
 .order-now-button{
-  padding:10px 20px;
-  font-weight:700;
+
+  padding:12px 30px;
+  font-size: 18px;
   border: none;
   border-radius: 5px;
-  color: white;
-  background-color: rgb(89, 202, 32);
+  color: rgb(214, 215, 227);
+  border: solid 1px;
+  background-color: rgb(45, 25, 199);
+  cursor: pointer;
+  transition: opacity 0.15s;
+
 }
+
+.order-now-button:hover{
+  opacity: 0.7;
+}
+
+
+
+
+
 .quantity-input::-webkit-outer-spin-button,
 .quantity-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -136,4 +176,19 @@ div> .increase{
 
 .quantity-input:focus {
   outline: none;
+}
+
+.product-desc{
+  padding: 10px 20px ;
+  border: solid 2px rgb(205, 42, 42);
+  border-top-width: 13px;
+ border-radius: 5px;
+  margin-left:80px;
+ 
+}
+
+.product-desc >table td{
+  
+  padding-bottom: 20px;
+  padding-right: 20px;
 }
