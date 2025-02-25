@@ -1,17 +1,22 @@
 
 .view-product{
+
+  background-color: white;
+  padding: 20px 20px;
   max-width: 1200px;
   flex-wrap: wrap;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0px 0px 7px rgba(0,0,0,0.1);
+  justify-content: center;
 }
 .product-detail-view{
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 50px;
-  align-items: start;
+  align-items: center;
   width: 100%;
   text-align: start;
   margin-bottom: 20px;
@@ -20,7 +25,7 @@
 
 .product-thumbnail-container{
 
- width: 500px;
+ width: 600px;
  height: 600px;
 }
 .product-thumbnail-container img{
@@ -37,9 +42,11 @@
 }
 
 .product-detail{
-  padding-top:20px;
-  padding-left: 20px;
-  padding-right: 20px;
+ 
+  padding-top:40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
   border-style: solid;
   border-color: #fa7900;
   border-width: 3px;
@@ -47,7 +54,7 @@
   border-right-width: 5px;
   border-radius: 6px;
   width: 450px;
-  height: 450px;
+  
 
 }
 .product-detail h1{
@@ -179,12 +186,13 @@ div> .increase{
 }
 
 .product-desc{
+  background-color: rgba(251, 7, 7, 0.264);
   padding: 10px 20px ;
   border: solid 2px rgb(205, 42, 42);
   border-top-width: 13px;
  border-radius: 5px;
-  margin-left:80px;
- 
+
+ color: rgb(66, 64, 64);
 }
 
 .product-desc >table td{

@@ -5,6 +5,7 @@
 body{
   height: 3000px;
   position: relative;
+  background-color: rgba(245, 245, 245, 0.515);
 }
 
 *{

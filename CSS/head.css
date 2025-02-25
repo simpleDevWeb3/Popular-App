@@ -175,13 +175,12 @@ svg{
   color: rgb(223, 39, 39);
   font-weight: 700;
   cursor: pointer;
-  transition: opacity 0.15s;
+  transition: color 0.25s;
 }
 
 .order-text:hover{
-  opacity: 0.8;
+ color: red;
 }
-
 
 nav{
   background-color: white;
@@ -207,10 +206,10 @@ nav >a{
   cursor: pointer;
   font-weight: bold;
   color: black;
-  transition: color 0.15s;
+  transition: color 0.25s;
 }
 nav >a:hover{
-     color: rgb(255, 0, 0);
+     color: rgb(238, 10, 10);
   
 }
 
