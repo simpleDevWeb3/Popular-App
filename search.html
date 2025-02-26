@@ -52,59 +52,79 @@
     <section class="search-page">
 
       <aside>
-        <div>
+        <div class=search-filter>
           <h1>Search Filter</h1>
-          <br>
-          <label>Price</label> 
-          <span>RM0 - RM100</span>
+          <hr>
+        
+          <div class="price-filter">
+            <label>Price</label> 
+            <span>RM0 - RM100</span>
+             <br>
+             <input type="range">
+             <br>
+             <button class="apply-button">
+              Apply
+              </ button>
+          </div>
+          
       
-          <br>
-          <input type="range">
-          <br>
-          <button>Apply</button>
+         
+       
         </div>
 
            <br>
-       
-        <div>
-          <label >Books</label>
-          <br>
-          <input type="checkbox">
-          <label>Novel</label>
-          <br>
-          <input type="checkbox">
-          <label>Revison</label>
-          <br>
-          <input type="checkbox">
-          <label>Self Help</label>
+        <div class="book-filter">
+            <h4>Books</h4>
+        
+            <input type="checkbox" id="filter-Novel">
+            <label for="filter-Novel">Novel</label>
+              <br>
+            <input type="checkbox" id="filter-Revision">
+            <label for="filter-Revision">Revison</label>
+              <br>
+            <input type="checkbox" id="filter-Self-Help">
+            <label for="filter-Self-Help">Self Help</label>
         </div>
            <br>
-        <div>
-          <label >Stationary</label>
+        <div class="stationary-filter">
+          <h4 >Stationary</h4>
+       
+          <input type="checkbox" id="filter-paper-product">
+          <label for="filter-paper-product">Paper Product</label>
           <br>
-          <input type="checkbox">
-          <label>Paper Product</label>
+          <input type="checkbox" id="filter-office-suplies">
+          <label for="filter-office-suplies">Office Suplies</label>
           <br>
-          <input type="checkbox">
-          <label>Office Suplies</label>
-          <br>
-          <input type="checkbox">
-          <label>Writting Instrument</label>
+          <input type="checkbox" id="filter-writting-instrument">
+          <label for="filter-writting-instrument">Writting Instrument</label>
         </div>
           <br>
-        <div>
-          <div>Ratings</div>
-          <br>
-          <div>
-            <img src="Img/Ratings/rating-50.png">
-            <img src="Img/Ratings/rating-40.png">
-            <label>&Up</label>
-            <img src="Img/Ratings/rating-30.png">
-            <label>&Up</label>
-            <img src="Img/Ratings/rating-20.png">
-            <label>&Up</label>
-            <img src="Img/Ratings/rating-10.png">
-            <label>&Up</label>
+        <div class="rating-filter">
+          <h4>Ratings</h4>
+          
+          <div class="filter-rating-grid">
+            <div> 
+              <img src="Img/Ratings/rating-50.png">
+            </div>
+            <div>
+              <img src="Img/Ratings/rating-40.png">
+             
+            </div>
+            <div>
+              <img src="Img/Ratings/rating-30.png">
+              
+            </div>
+            <div>
+              <img src="Img/Ratings/rating-20.png">
+             
+            </div>
+            <div>
+              <img src="Img/Ratings/rating-10.png">
+            
+            </div>
+           
+            
+
           </div>
         </div>
        
