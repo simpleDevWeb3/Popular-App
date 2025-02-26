@@ -25,7 +25,6 @@ main{
   justify-content:start;
   height: 200px;
   cursor: pointer;
-  transition: background-color 0.15s;
   border: solid 1px rgb(212, 210, 206);
   border-radius: 5px;
   gap: 40px;
@@ -49,25 +48,26 @@ main{
 .product-details-container{
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   width: 100%;
-  gap: 10px;
+  gap: 0px;
 }
 .product-details-container >a{
-  font-size: 25px;
+  color:rgb(39, 38, 38);
+  font-size: 20px;
   opacity: 1;
 }
 
 .product-details-container .rating>span{
- font-size: 25px;
+ font-size: 20px;
  
 }
 
 .product-details-container .rating>img{
-  width: 130px;
+  width: 100px;
   border: none;
   background: none;
 }
 .product-details-container .price{
- font-size: 25px;
+ font-size: 20px;
 }
