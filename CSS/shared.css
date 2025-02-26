@@ -4,7 +4,6 @@
 
 body{
 
-  
   position: relative;
   background-color: rgba(245, 245, 245, 0.515);
   display: flex;
@@ -20,8 +19,10 @@ body{
 main{
   flex: 1; 
 }
+
 a{
   text-decoration: none;
   color: black;
   opacity: 0.5;
+  font-weight: 600;
 }
