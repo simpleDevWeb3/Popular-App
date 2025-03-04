@@ -19,7 +19,7 @@ svg{
 .popular-left-head{
 
   margin-left: 50px;
-  margin-right: 200px;
+
 }
 .popular-left-head a{
   opacity: 1;
@@ -36,14 +36,14 @@ svg{
 
 
 .popular-center-head {
-  flex: 1;
+
+  width: 600px;
   padding-right: 60px;
   position: relative;
-  width: 600px;
   border-radius: 25px;
   background-color: #ececec;
   height: 50px;
-  flex-shrink: 0;
+
 }
 
 .search-bar {
@@ -76,18 +76,43 @@ svg{
 
 
 @media screen and (max-width: 768px) {
-  .popular-center-head {
-   width: 250px;
-     
-  } 
+  header {
+   
+    text-align: center;
+    padding: 10px;
+ }
+
+ .order-text{
+  display: none;
+ }
 
 
 
 
-  .popular-right-head{
+ .popular-center-head {
+  width: 100%;
+  justify-content: center;
+}
 
-    flex-shrink: unset;
-  }
+.search-bar {
+  width: 100%; /* Make search bar full width */
+}
+
+ 
+
+ .order-text{
+ font-size: 80px;
+ }
+
+
+
+ 
+ .popular-right-head {
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
 
  
 
@@ -106,14 +131,6 @@ svg{
   } 
 
 
-  .popular-center-head {
-     display:none;
-  }
-
-  .order-text{
-    display:none;
- 
-  }
 
   .product-grid{
        display: flex ;
@@ -131,7 +148,7 @@ svg{
 
 
 .popular-right-head{
-  margin-left: 80px;
+  margin-left: 20px;
   display: flex;
   flex-shrink: 0;
   align-items: center;
@@ -205,11 +222,13 @@ nav{
 nav >a{
   cursor: pointer;
   font-weight: bold;
-  color: black;
+  color: rgb(145, 143, 143);
+  opacity: 1;
   transition: color 0.25s;
 }
 nav >a:hover{
-     color: rgb(238, 10, 10);
+     color: rgb(223, 25, 25);
+    
   
 }
 

@@ -59,7 +59,8 @@ main{
 }
 
 .product-details-container .rating>span{
- font-size: 20px;
+ font-size: 15px;
+ font-weight: 600;
  
 }
 
